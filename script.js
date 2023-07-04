@@ -15,6 +15,9 @@ function writePassword() {
 function generatePassword() {
   var passwordLeng = makePassWordlength();
   if (!passwordLeng) return " ";
+
+  var includSpecials = confirm("Include special characters");
+  // im going to add a open string for when after the program is ran
 }
 
 // Add event listener to generate button
