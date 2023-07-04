@@ -31,7 +31,21 @@ function generatePassword() {
   var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
   var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var numericChars = "0123456789";
+  // adding specifications for what can be used for the random password generatir to give us a large area way to make a unique and good password. 
 
+  var avaliableChara = " ";
+  if (includeSpecial) availableChars += specialChars;
+  if (includeLowercase) availableChars += lowercaseChars;
+  if (includeUppercase) availableChars += uppercaseChars;
+  if (includeSpecial) availableChars += specialChars;
+
+  var generratedPassword = " ";
+  for (var i = 0; i < makePassWordlength; i++) {
+    var randomIndex = math.floor(Math.random() * avaliableChara.length);
+    generatePassword += avaliableChara[randomIndex];
+  }
+
+  return generratedPassword;
 
 }
 
