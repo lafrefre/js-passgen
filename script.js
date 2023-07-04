@@ -16,7 +16,10 @@ function generatePassword() {
   var passwordLeng = makePassWordlength();
   if (!passwordLeng) return " ";
 
-  var includSpecials = confirm("Include special characters");
+  var includSpecials = confirm("Include special characters.");
+  var includeLowcase = confirm("Include lowcase characters.");
+  var includeUppercase = confirm("Include uppercase characters.");
+  var includeNumers = confirm("Include numbers.")
   // im going to add a open string for when after the program is ran
 }
 
